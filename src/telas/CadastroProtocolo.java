@@ -7,12 +7,11 @@ package telas;
 
 import estrutura.BancoDados;
 import java.sql.SQLException;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 /**
  *
@@ -86,23 +85,13 @@ public class CadastroProtocolo extends javax.swing.JFrame {
 
         jLabel5.setText("Motivo do contato");
 
-        filtro1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ações Ativas", "Informação", "Reclamação", "Solicitação" }));
+        filtro1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------", "Ações Ativas", "Informação", "Reclamação", "Solicitação" }));
 
-        filtro2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item1" }));
-        filtro2.addContainerListener(new java.awt.event.ContainerAdapter() {
-            public void componentAdded(java.awt.event.ContainerEvent evt) {
-                filtro2ComponentAdded(evt);
-            }
-        });
-        filtro2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                filtro2ActionPerformed(evt);
-            }
-        });
+        filtro2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------" }));
 
-        filtro3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        filtro3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------" }));
 
-        filtro4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        filtro4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------" }));
 
         jLabel6.setText("Situação *");
 
@@ -269,14 +258,6 @@ public class CadastroProtocolo extends javax.swing.JFrame {
             evt.setKeyChar(Character.toUpperCase(keyChar));
         }
     }//GEN-LAST:event_txtNomeContatoKeyTyped
-
-    private void filtro2ComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_filtro2ComponentAdded
-        // TODO add your handling code here:z
-    }//GEN-LAST:event_filtro2ComponentAdded
-
-    private void filtro2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filtro2ActionPerformed
-
-    }//GEN-LAST:event_filtro2ActionPerformed
 
     /**
      * @param args the command line arguments

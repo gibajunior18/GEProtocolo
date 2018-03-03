@@ -84,25 +84,18 @@ public class BancoDados {
         return null;
     } 
        
-    public List<String> listaFiltro(String filtro) throws SQLException{
+    public List<String> listaFiltro(String filtro, String tabela) throws SQLException{
         BancoDados bd = new BancoDados();
         Connection con = bd.setConnection();
         List<String> strList = new ArrayList<String>();
-        String query = "SELECT cd_filtro2 FROM geprotocolo.filtro2 WHERE cd_filtro1 = '"+filtro+"'";
+        String query = "SELECT cd_filtro2 FROM "+tabela+" WHERE cd_filtro1 = '"+filtro+"'";
         Statement st = con.createStatement();
         ResultSet rs = st.executeQuery(query);
+        strList.add("----------");
         while (rs.next()){
             strList.add(rs.getString(1));
-            System.out.print(strList);
         }
         difConnection(con);
         return strList;
     }
-
-public static void main(String[] args) throws SQLException {
-        BancoDados bd = new BancoDados();
-        Connection con = bd.setConnection();
-        bd.listaFiltro("Solicitação");
-        bd.difConnection(con);
-    }    
 }

@@ -183,11 +183,12 @@
     <Component class="javax.swing.JComboBox" name="filtro1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="A&#xe7;&#xf5;es Ativas"/>
-            <StringItem index="1" value="Informa&#xe7;&#xe3;o"/>
-            <StringItem index="2" value="Reclama&#xe7;&#xe3;o"/>
-            <StringItem index="3" value="Solicita&#xe7;&#xe3;o"/>
+          <StringArray count="5">
+            <StringItem index="0" value="----------"/>
+            <StringItem index="1" value="A&#xe7;&#xf5;es Ativas"/>
+            <StringItem index="2" value="Informa&#xe7;&#xe3;o"/>
+            <StringItem index="3" value="Reclama&#xe7;&#xe3;o"/>
+            <StringItem index="4" value="Solicita&#xe7;&#xe3;o"/>
           </StringArray>
         </Property>
       </Properties>
@@ -199,14 +200,10 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="1">
-            <StringItem index="0" value="Item1"/>
+            <StringItem index="0" value="----------"/>
           </StringArray>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="componentAdded" listener="java.awt.event.ContainerListener" parameters="java.awt.event.ContainerEvent" handler="filtro2ComponentAdded"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filtro2ActionPerformed"/>
-      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
@@ -214,11 +211,8 @@
     <Component class="javax.swing.JComboBox" name="filtro3">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+          <StringArray count="1">
+            <StringItem index="0" value="----------"/>
           </StringArray>
         </Property>
       </Properties>
@@ -229,11 +223,8 @@
     <Component class="javax.swing.JComboBox" name="filtro4">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
+          <StringArray count="1">
+            <StringItem index="0" value="----------"/>
           </StringArray>
         </Property>
       </Properties>
