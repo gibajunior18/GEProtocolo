@@ -113,4 +113,19 @@ public class BancoDados {
         difConnection(con);
         return strList;
     }
+    
+    public List<String> listaFiltro3(String filSelect, String filWhere1, String filWhere2, String filWhere3, String valor1, String valor2, String valor3) throws SQLException{
+        BancoDados bd = new BancoDados();
+        Connection con = bd.setConnection();
+        List<String> strList = new ArrayList<String>();
+        String query = "SELECT DISTINCT "+filSelect+" FROM geprotocolo.filtros WHERE "+filWhere1+" = '"+valor1+"' AND "+filWhere2+" = '"+valor2+"'AND "+filWhere3+" = '"+valor3+"';";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(query);
+        strList.add("----------");
+        while (rs.next()){
+            strList.add(rs.getString(1));
+        }
+        difConnection(con);
+        return strList;
+    }
 }

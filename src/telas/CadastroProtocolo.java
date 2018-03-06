@@ -315,7 +315,7 @@ public class CadastroProtocolo extends javax.swing.JFrame {
         // TODO add your handling code here:
         BancoDados bd = new BancoDados();
         try {
-            ArrayList<String> list = (ArrayList<String>) bd.listaFiltro("cd_filtro4", "cd_filtro3", filtro3.getSelectedItem().toString());
+            ArrayList<String> list = (ArrayList<String>) bd.listaFiltro3("cd_filtro4", "cd_filtro3", "cd_filtro2","cd_filtro1",filtro3.getSelectedItem().toString(),filtro2.getSelectedItem().toString(),filtro1.getSelectedItem().toString());
             filtro4.removeAllItems();
             DefaultComboBoxModel combo = new DefaultComboBoxModel(list.toArray());
             filtro4.setModel(combo);
