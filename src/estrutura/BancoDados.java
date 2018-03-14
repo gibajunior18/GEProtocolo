@@ -17,7 +17,7 @@ import javax.swing.JComboBox;
 public class BancoDados {
     
     public Connection setConnection() throws SQLException{
-        String url = "jdbc:postgresql://localhost:5432/protocolo?user=postgres&password=ge2018";
+        String url = "jdbc:postgresql://192.168.15.7:5432/protocolo?user=postgres&password=ge2018";
         Connection con = DriverManager.getConnection(url);
         return con;
     }

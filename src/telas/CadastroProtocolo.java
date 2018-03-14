@@ -88,7 +88,7 @@ public class CadastroProtocolo extends javax.swing.JFrame {
 
         jLabel5.setText("Motivo do contato");
 
-        filtro1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------", "Ações Ativas", "Informação", "Reclamação", "Solicitação" }));
+        filtro1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------", "Ações Ativas", "Informação", "Reclamação", "Solicitação", "Sugestão" }));
         filtro1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 filtro1ActionPerformed(evt);
